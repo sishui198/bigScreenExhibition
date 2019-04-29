@@ -1,0 +1,78 @@
+<html>
+<head></head>
+<body>
+
+
+    <script>
+
+        function ws1(){
+
+	 var ws = new WebSocket("ws://102.200.192.249:5080/bigScreen/message");
+
+            						console.log(ws.readyState);
+            						switch(ws.readyState){
+                						case 0: console.log("not connection yet! ");
+                      							  break;
+           							 }
+
+           						 ws.onopen = function(){
+                						console.log("connected!");
+            						};
+
+           						 ws.onmessage = function(response){
+								console.log(response);
+							};
+
+							 ws.onerror = function(response){
+								console.log(response);
+							};
+
+ 							ws.onclose = function(response){
+								console.log(response);
+							};
+							
+
+   }
+   function ws2(){                                                                                                             
+
+         var ws = new WebSocket("ws://102.200.192.249:5080/bigScreen/message");                                                     
+
+                                                        console.log(ws.readyState);
+                                                        switch(ws.readyState){
+                                                                case 0: console.log("not connection yet! ");
+                                                                          break;
+                                                                 }
+
+                                                         ws.onopen = function(){
+                                                                console.log("connected!");
+                                                        };
+
+                                                         ws.onmessage = function(response){
+                                                                console.log(response);
+                                                        };
+
+                                                         ws.onerror = function(response){
+                                                                console.log(response);
+                                                        };
+
+                                                        ws.onclose = function(response){
+                                                                console.log(response);
+                                                        };
+                                                       
+   }
+
+	if("WebSocket" in window){
+		console.log("we have WebSocket!!!");
+		ws1();
+		ws2();
+	}else{
+		console.log("we have no WebSocket!!!");
+	}
+
+
+    </script>
+
+
+</body>
+
+</html>

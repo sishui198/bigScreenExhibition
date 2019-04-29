@@ -1,0 +1,75 @@
+<web-app version="3.0"
+         xmlns="http://java.sun.com/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd">
+
+	<!-- 初始化SessionFactory监听器 -->
+	<listener>
+		<listener-class>init.SessionFactoryListener</listener-class>
+	</listener>   
+	
+    <servlet>
+        <servlet-name>websocket</servlet-name>
+        <servlet-class>websocket.jetty.server.message.MessageServlet</servlet-class>
+        <load-on-startup>1</load-on-startup>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>websocket</servlet-name>
+        <url-pattern>/message</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>counter</servlet-name>
+        <servlet-class>websocket.jetty.server.countertop.CounterTopServlet</servlet-class>
+        <load-on-startup>2</load-on-startup>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>counter</servlet-name>
+        <url-pattern>/countertop</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>api</servlet-name>
+        <servlet-class>itil.ApiController</servlet-class>
+        <load-on-startup>3</load-on-startup>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>api</servlet-name>
+        <url-pattern>/itil</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>indicator</servlet-name>
+        <servlet-class>itil.ITILController</servlet-class>
+        <load-on-startup>3</load-on-startup>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>indicator</servlet-name>
+        <url-pattern>/indicator</url-pattern>
+    </servlet-mapping>
+
+<servlet>
+	<servlet-name>insertFaultStatistics</servlet-name>
+	<servlet-class>itil.InsertFaultStatisticsController</servlet-class>
+	<load-on-startup>5</load-on-startup>
+</servlet>
+<servlet-mapping>
+	<servlet-name>insertFaultStatistics</servlet-name>
+	<url-pattern>/insertFaultStatistics</url-pattern>
+</servlet-mapping>
+
+<servlet>
+	<servlet-name>insertFault</servlet-name>
+	<servlet-class>itil.InsertFaultController</servlet-class>
+	<load-on-startup>6</load-on-startup>
+</servlet>
+<servlet-mapping>
+	<servlet-name>insertFault</servlet-name>
+	<url-pattern>/insertFault</url-pattern>
+</servlet-mapping>
+
+</web-app>

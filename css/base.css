@@ -1,0 +1,348 @@
+
+/*test*/
+div{
+    border: 0;
+    padding: 0;
+}
+/**/
+html{
+    /*position: absolute;*/
+    /*min-height: 900px;*/
+    /*height: 100%;*/
+    /*width: 100%;*/
+    width: 1920px;
+    height: 1080px;
+    padding: 0 0;
+    margin: 0 0;
+}
+body{
+
+    padding: 0 0;
+    margin: 0 0;
+    background-image: url('../img/images/bg.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    -webkit-background-size: 100% 100%;
+    -o-background-size: 100% 100%;
+}
+/**/
+#header{
+    width: 1920px;
+    height: 70px;
+    margin: 0 0 0 0;
+    /*width: 100%;*/
+    top: 0;
+}
+/*主体部分*/
+#main{
+    width: 1920px;
+    height: 1010px;
+    /*padding-top: 1%;*/
+    color: #fff;
+}
+
+/**/
+#l1,#r1{
+    /*position: absolute;*/
+    height:200px;
+    width: 540px;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-top: -20px;
+    background-image: url('../img/images/bg_l1_r1.png');
+    background-repeat: no-repeat;
+    background-origin: border-box;
+    /*background-size: cover;*/
+    background-size: 100% 100%;
+    /*-webkit-background-size: cover;*/
+    /*-o-background-size: 100% 100%;*/
+}
+#r1{
+    float: right;
+}
+#l2{
+
+    height:380px;
+    width: 450px;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-top: 20px;
+    background-image: url('../img/images/bg_l2_title.png');
+    background-repeat: no-repeat;
+    background-origin: border-box;
+    background-size: 100% 100%;
+    -webkit-background-size: 100% 100%;
+    -o-background-size: 100% 100%;
+}
+
+#l3{
+    height:380px;
+    width: 450px;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-top: 20px;
+    background-image: url('../img/images/bg_l3_title.png');
+    background-repeat: no-repeat;
+    background-origin: border-box;
+    background-size: 100% 100%;
+    -webkit-background-size: 100% 100%;
+    -o-background-size: 100% 100%;
+}
+#c1{
+    position: absolute;
+    z-index: -1;
+    height:660px;
+    width: 920px;
+    margin-left: -153px;
+    margin-right: 15px;
+    margin-top: 20px;
+    background-image: url('../img/images/bg_c1.png');
+    background-repeat: no-repeat;
+    background-origin: border-box;
+    background-size: 100% 100%;
+    -webkit-background-size: 100% 100%;
+    -o-background-size: 100% 100%;
+}
+#c2{
+    height:310px;
+    width: 920px;
+    margin-left: -153px;
+    margin-right: 15px;
+    margin-top: 670px;
+    background-image: url('../img/images/bg_c2.png');
+    background-repeat: no-repeat;
+    background-origin: border-box;
+    background-size: 100% 100%;
+    -webkit-background-size: 100% 100%;
+    -o-background-size: 100% 100%;
+}
+#c2 .center-2{
+    float: left;
+}
+
+#r2{
+    float: right;
+    height:380px;
+    width: 450px;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-top: 0;
+    background-image: url('../img/images/bg_r2_title.png');
+    background-repeat: no-repeat;
+    background-origin: border-box;
+    background-size: 100% 100%;
+    -webkit-background-size: 100% 100%;
+    -o-background-size: 100% 100%;
+}
+#r3{
+    float: right;
+    height:380px;
+    width: 450px;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-top: 0;
+    background-image: url('../img/images/bg_r3_title.png');
+    background-repeat: no-repeat;
+    background-origin: border-box;
+    background-size: 100% 100%;
+    -webkit-background-size: 100% 100%;
+    -o-background-size: 100% 100%;
+}
+
+#l2 .modal-body,#l3 .modal-body,#r2 .modal-body,#r3 .modal-body{
+    position: relative;
+    margin-top: 50px;
+    margin-bottom: 5px;
+    height: 90%;
+    width: 100%;
+}
+/*核心交易量，交易渠道排名，交易前五名省份*/
+#center-1-1,#center-1-2,#center-1-3{
+    position: absolute;
+    /*height: 11%;*/
+    /*width: 12%;*/
+    z-index: 50;
+    /*border: 1px solid red;*/
+}
+
+/*核心交易量*/
+#center-1-1{
+    left: 330px;
+    top: 0px;
+    height: 11%;
+    width: 27%;
+    background-image:url('../img/images/bg_c1_1.png');
+    background-repeat: no-repeat;
+    background-origin: border-box;
+    background-size: 100% 100%;
+    -webkit-background-size: 100% 100%;
+    -o-background-size: 100% 100%;
+    /*padding: 3.3% 2.1% 7% 8%;!*22/661 14/661 20/283 23/283*!*/
+}
+#center-1-1 .center-1-1-number{
+    float: left;
+    margin: 10% 1% 7% 1.5%;/*105/180 9/625 14/180 9/625*/
+    width: 9.08%;
+    height: 43.11%;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 37px;
+    color: #ffce5a;
+}
+
+#center-1-1 .center-1-1-number:nth-child(1){
+    /*margin-left: ;*/
+}
+#center-1-1 .center-1-1-number:nth-child(2){
+    /*margin: 17% 1.25% 7% 1%;*/
+    margin-right: 1.25%;
+}
+#center-1-1 .center-1-1-number:nth-child(3){
+    /*margin: 17% 0.25% 7% 2%;*/
+    margin-left: 5%;
+}
+#center-1-1 .center-1-1-number:nth-child(4){
+    /*margin: 17% 1.25% 7% 2%;*/
+    margin-right: 1.25%;
+}
+#center-1-1 .center-1-1-number:nth-child(5){
+    /*margin: 17% 1.25% 7% 2%;*/
+    margin-right: 1.25%;
+}
+#center-1-1 .center-1-1-number:nth-child(6){
+    /*margin: 17% 0.25% 7% 1.5%;*/
+    margin-left: 4%;
+}
+#center-1-1 .center-1-1-number:nth-child(7){
+    /*margin: 17% 1.25% 7% 2%;*/
+    margin-right: 1.25%;
+}
+#center-1-1 .center-1-1-number:nth-child(8){
+    /*margin: 17% 1.25% 7% 2%;*/
+    margin-right: 1.25%;
+}
+
+/*交易渠道排名*/
+#center-1-2{
+    left: 700px;
+    top: 50%;
+    height: 280px;
+    width: 200px;
+    background-image:url('../img/images/bg_c1_2.png');
+    background-repeat: no-repeat;
+    background-origin: border-box;
+    background-size: 100% 100%;
+}
+#center-1-2 .center-1-2-node{
+    margin-top: 12px;
+}
+
+    /*进度条*/
+#center-1-2 .progress,#center-1-3 .progress{
+    margin: 2px auto;
+    height: 14px;
+    background-color: rgba(0,0,0,0);
+}
+
+#center-1-2 .center-1-2-node div:first-child{
+    /*float: left;*/
+    /*overflow: hidden;*/
+    padding: 0 2px;
+    color: #fff;
+    font-weight: 900;
+    font-size: 16px;
+}
+
+#center-1-2 .progress .progress-bar{
+    background-image: url("");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    -webkit-background-size: 100% 100%;
+    -o-background-size: 100% 100%;
+}
+
+/*交易前五名*/
+#center-1-3{
+    right: 40px;
+    top: 50%;
+    height: 10%;
+    width: 26%;
+}
+
+#center-1-3 .center-1-3-node .ladder-shaped-panel{
+    /*position: absolute;*/
+    /*float: left;*/
+    height: 20px;
+    color: #78d0bf;
+    /*background-color: #2aabd2;*/
+}
+
+#center-1-3 .center-1-3-node .ladder-shaped-panel div:first-child{
+    float: left;
+}
+#center-1-3 .center-1-3-node .ladder-shaped-panel div:last-child{
+    float: right;
+}
+
+#center-1-3 .center-1-3-node .ladder-shaped01{
+    height: 0;
+    width: 55%;
+    border-top: 1em solid #6623e2;
+    border-right: 10px solid transparent;
+    /*background-color: #6623e2;*/
+}
+#center-1-3 .center-1-3-node .ladder-shaped02{
+    height: 0;
+    width: 45%;
+    border-top: 1em solid #227fe2;
+    border-right: 10px solid transparent;
+    /*background-color: #227fe2;*/
+}
+#center-1-3 .center-1-3-node .ladder-shaped03{
+    height: 0;
+    width: 35%;
+    border-top: 1em solid #1fbdb8;
+    border-right: 10px solid transparent;
+}
+#center-1-3 .center-1-3-node .ladder-shaped04{
+    height: 0;
+    width: 25%;
+    border-top: 1em solid #fe7407;
+    border-right: 10px solid transparent;
+}
+#center-1-3 .center-1-3-node .ladder-shaped05{
+    height: 0;
+    width: 15%;
+    border-top: 1em solid #f9a91f;
+    border-right: 10px solid transparent;
+}
+
+#center-2-3{
+    color: #bfbfbf;
+}
+#center-2-3 .dropdown-menu{
+    min-width: 110px;
+    padding: 0 0;
+}
+#center-2-3 ul li{
+    text-align: center;
+}
+
+#center-2-3 ul li:nth-child(even){
+    background-color: #a9a9a9;
+}
+
+#center-2-3 ul li:nth-child(odd){
+    background-color: #7d7d7d;
+}
+
+/*仪表盘*/
+.gauge{
+    float: left;
+    margin-right: 5px;
+}
+
+#center2 .modal-body .center-2{
+    float: left;
+    margin-right: 5px;
+}

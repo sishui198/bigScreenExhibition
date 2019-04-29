@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--<meta http-equiv="" content="">-->
+    <meta http-equiv="expires" content="-1">
+    <meta http-equiv="pragma" content="no-cache">
+    <meta http-equiv="cache-control" content="no-cache">
+    <meta http-equiv="cache" content="no-cache">
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <title>华夏银行数据分析大屏展示</title>
+    <link rel="icon" href="img/logo_03.png">
+    <link rel="stylesheet" href="static/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="static/jQueryUI/jquery-ui.min.css">
+    <link rel="stylesheet" href="css/base.css">
+</head>
+<body>
+
+    <div id="header">
+            <!--<div style="background-image: url('img/bgimg/images/title_text_02_02.png')"></div>-->
+    </div>
+
+    <div id="main" class="">
+        <!--left-->
+        <div class="col-lg-4 col-md-4">
+            <!-- left 1 系统运维管理指标 -->
+            <div id="l1" class="panel panelGauge">
+                <!--<div class="panel-heading" >-->
+                    <!--<h3 class="panel-title">系统运维管理指标</h3>-->
+                <!--</div>-->
+                <div class="modal-body">
+                    <!--重要信息系统可用率-->
+                    <div id="left-1-1" class="gauge">
+
+                    </div>
+                    <!--事件按时解决率-->
+                    <div id="left-1-2" class="gauge">
+
+                    </div>
+                    <!--A/B级事件数量-->
+                    <div id="left-1-3" class="gauge">
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- left 2  系统运行整体指标分析 -->
+            <div id="l2" class="panel">
+                <!--<div class="panel-heading">-->
+                    <!--<h3 class="panel-title">系统运行整体指标分析</h3>-->
+                <!--</div>-->
+                <div id="left-2" class="modal-body"></div>
+            </div>
+
+            <!-- left 3 变更类型分析 -->
+            <div id="l3" class="panel">
+                <!--<div class="panel-heading">-->
+                    <!--<h3 class="panel-title">变更类型分析</h3>-->
+                <!--</div>-->
+                <div id="left-3" class="modal-body"></div>
+            </div>
+        </div>
+
+        <!-- center -->
+        <div class="col-lg-4 col-md-4">
+            <!-- center 1 交易量分析 -->
+            <div id="c1" class="panel panelCore">
+                <!--<div class="panel-heading">-->
+                    <!--<h3 class="panel-title">交易量分析</h3>-->
+                <!--</div>-->
+                <div>
+                    <div id="center-1" class="modal-body"></div>
+
+                    <!--核心交易量-->
+                    <div id="center-1-1">
+                        <div class="center-1-1-number">0</div>
+                        <div class="center-1-1-number">0</div>
+                        <div class="center-1-1-number">0</div>
+                        <div class="center-1-1-number">0</div>
+                        <div class="center-1-1-number">0</div>
+                        <div class="center-1-1-number">0</div>
+                        <div class="center-1-1-number">0</div>
+                        <div class="center-1-1-number">0</div>
+                    </div>
+
+                    <!--交易渠道排名-->
+                    <div id="center-1-2">
+                        <!--渠道No.1-->
+                        <div id="center-1-2-volumes01" class="center-1-2-node col-lg-12 col-md-12">
+                            <div class=" col-lg-6 col-md-6">E商宝</div>
+                            <div class=" col-lg-6 col-md-6">
+                                <div class="progress ">
+                                    <div id="" class="progress-bar progress-bar-warning" role="progressbar"
+                                         aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"
+                                         style="width: 0%;">
+                                        <span class="sr-only">E商宝</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-12 col-md-12">
+                                <span style="float: left;color: #ffce5a;" class="proText"></span>
+                            </div>
+                        </div>
+
+                        <!--渠道No.2-->
+                        <div id="center-1-2-volumes02"  class="center-1-2-node col-lg-12 col-md-12">
+                            <div class="col-lg-6 col-md-6">网上银行</div>
+                            <div class=" col-lg-6 col-md-6">
+                                <div class="progress">
+                                    <div class="progress-bar progress-bar-warning" role="progressbar"
+                                         aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"
+                                         style="width: 0%;">
+                                        <span class="sr-only">网上银行</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-12 col-md-12">
+                                <span style="float: left;color: #ffce5a;" class="proText"></span>
+                            </div>
+                        </div>
+
+                        <!--渠道No.3-->
+                        <div  id="center-1-2-volumes03" class="center-1-2-node col-lg-12 col-md-12">
+                            <div class="col-lg-6 col-md-6">手机银行</div>
+                            <div class=" col-lg-6 col-md-6">
+                                <div class="progress">
+                                    <div class="progress-bar progress-bar-warning" role="progressbar"
+                                         aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"
+                                         style="width: 0%;">
+                                        <span class="sr-only">手机银行</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-12 col-md-12">
+                                <span style="float: left;color: #ffce5a;" class="proText"></span>
+                            </div>
+                        </div>
+
+                        <!--渠道No.4-->
+                        <div id="center-1-2-volumes04"  class="center-1-2-node col-lg-12 col-md-12">
+                            <div class="col-lg-6 col-md-6">柜面银行</div>
+                            <div class=" col-lg-6 col-md-6">
+                                <div class="progress">
+                                    <div class="progress-bar progress-bar-warning" role="progressbar"
+                                         aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"
+                                         style="width: 0%;">
+                                        <span class="sr-only">柜面银行</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-12 col-md-12">
+                                <span style="float: left;color: #ffce5a;" class="proText"></span>
+                            </div>
+                        </div>
+                        <!--渠道No.5-->
+                        <div id="center-1-2-volumes05"  class="center-1-2-node col-lg-12 col-md-12">
+                            <div class="col-lg-6 col-md-6">超级网银</div>
+                            <div class=" col-lg-6 col-md-6">
+                                <div class="progress">
+                                    <div class="progress-bar progress-bar-warning" role="progressbar"
+                                         aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"
+                                         style="width: 0%;">
+                                        <span class="sr-only">超级网银</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-12 col-md-12">
+                                <span style="float: left;color: #ffce5a;" class="proText"></span>
+                            </div>
+                        </div>
+                        <!--渠道No.6-->
+                        <!--
+                        <div id="center-1-2-volumes06"  class="center-1-2-node col-lg-12 col-md-12">
+                            <div class="col-lg-7 col-md-7">其他</div>
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-danger" role="progressbar"
+                                     aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"
+                                     style="width: 0%;">
+                                    <span class="sr-only">其他</span>
+                                </div>
+                            </div>
+                        </div>
+                        -->
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- center 2 事件类型分析 -->
+            <div id="c2" class="panel">
+                <!--<div class="panel-heading">-->
+                    <!--<h3 class="panel-title">事件类型分析</h3>-->
+                <!--</div>-->
+                <div class="modal-body">
+                    <!--饼状图-->
+                    <div id="center-2-1" class="center-2"></div>
+                    <!--事件类型月度汇总表-->
+                    <div id="center-2-2" class="center-2" style="float: left;"></div>
+
+                    <!--  -->
+                    <div id ="center-2-3" class="dropup" style="position: absolute; right: 15%; top: 10%;">
+                        <button type="button" class="btn-default btn  btn-xs" data-toggle="dropdown"
+                                style="background-color: #626262;  color: #bfbfbf;">
+                            ---- <span class="caret"></span>
+                        </button>
+                        <ul id="center-2-3-ul" class="dropdown-menu" role="menu" style="">
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+        <!-- right -->
+        <div class="col-lg-4 col-md-4">
+            <!-- right 1 系统运维管理指标 -->
+            <div id="r1" class="panel panelGauge">
+                <!--<div class="panel-heading">-->
+                    <!--<h3 class="panel-title">系统运维管理指标</h3>-->
+                <!--</div>-->
+                <div class="modal-body">
+                    <!--变更成功执行率-->
+                    <div id="right-1-1" class="gauge">
+
+                    </div>
+                    <!--自动化执行率-->
+                    <div id="right-1-2" class="gauge">
+
+                    </div>
+                    <!--故障自愈率-->
+                    <div id="right-1-3" class="gauge">
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- right 2 自动化执行、变更成功执行率 -->
+            <div id="r2" class="panel">
+                <!--<div class="panel-heading">-->
+                    <!--<h3 class="panel-title">自动化执行率、变更成功执行率</h3>-->
+                <!--</div>-->
+                <div id="right-2" class="modal-body"></div>
+            </div>
+
+            <!-- right 3 事件按时解决、故障自愈率 -->
+            <div id="r3" class="panel">
+                <!--<div class="panel-heading">-->
+                    <!--<h3 class="panel-title">事件按时解决率、故障自愈率</h3>-->
+                <!--</div>-->
+                <div id="right-3" class="modal-body"></div>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="static/jQuery/jquery.min.js"></script>
+    <script type="text/javascript" src="static/jQueryUI/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="static/bootstrap/js/bootstrap.min.js"></script>
+
+    <script type="text/javascript" src="static/bootbox/bootbox.min.js"></script>
+
+    <script type="text/javascript" src="static/highcharts/highcharts.js"></script>
+    <script type="text/javascript" src="static/highcharts/highcharts-3d.js"></script>
+    <script type="text/javascript" src="static/highcharts/map.js"></script>
+    <script type="text/javascript" src="static/highcharts/dataChina.js"></script>
+    <!--<script src="https://data.jianshukeji.com/geochina/china.js"></script>-->
+
+    <script type="text/javascript" src="static/echarts/echarts.min.js"></script>
+    <script type="text/javascript" src="static/echarts/china.js"></script>
+    <script type="text/javascript" src="static/echarts/macarons.js"></script>
+    <script type="text/javascript" src="static/echarts/shine.js"></script>
+
+    <script type="text/javascript" src="js/base.js"></script>
+    <!-- <script type="text/javascript" src="js/mqttTestDemo.js"></script> -->
+    <script type="text/javascript" src="js/left_1_dashboard.js"></script>
+    <script type="text/javascript" src="js/left_2_Overall_IndexAnalysis.js"></script>
+    <script type="text/javascript" src="js/left_3_ChangeType.js"></script>
+    <script type="text/javascript" src="js/center_1_CoreTrading.js"></script>
+    <script type="text/javascript" src="js/center_2_EventType.js"></script>
+    <script type="text/javascript" src="js/right_1_dashboard.js"></script>
+    <script type="text/javascript" src="js/right_2_ImplementationRate.js"></script>
+    <script type="text/javascript" src="js/right_3_ResolveRate_SelfHealingRate.js"></script>
+</body>
+</html>

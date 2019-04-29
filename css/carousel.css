@@ -1,0 +1,38 @@
+/*20190125 董方方*/
+/*更换为非轮播图首页时请同时移除此css文件*/
+
+#c1 div .modal-body .jumbotron {
+	width: 746px;
+	text-align:center;
+	margin:0 auto;
+}
+
+#c1 div .modal-body .jumbotron img:nth-child(1) {
+	margin-top: -326px;
+	margin-bottom: 18px;
+	margin-left: 14px;
+}
+#c1 div .modal-body .jumbotron img:nth-child(2) {
+	width: 918px;
+	margin-left: -71px;
+	margin-top: -130px;
+}
+#c1 div .modal-body{
+
+}
+#center-1{
+	height: 382px;
+	margin-top: -99px;
+	width: 100%;
+}
+#center-1 .carousel-inner .item{
+
+}
+#c1{
+	height: 392px;
+	margin-left: -170px;
+	margin-top: 200px;
+}
+.carousel-indicators {
+    bottom: 6px;
+}
